@@ -1,6 +1,32 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:linear
+LIBS:regul
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:gsg-symbols
+LIBS:Connector
 LIBS:indigo-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,14 +41,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L indigo-rescue:UCC2751X-SOT23-5 U2
+L UCC2751X-SOT23-5 U?
 U 1 1 5A55D20A
 P 3100 3500
-AR Path="/5A5600E6/5A55D20A" Ref="U2"  Part="1" 
-AR Path="/5A55CBF5/5A55D20A" Ref="U1"  Part="1" 
-F 0 "U1" H 3350 3600 60  0000 C CNN
+F 0 "U?" H 3350 3600 60  0000 C CNN
 F 1 "UCC2751X-SOT23-5" H 3550 3200 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 3300 3600 60  0001 C CNN
+F 2 "" H 3300 3600 60  0001 C CNN
 F 3 "" H 3300 3600 60  0001 C CNN
 	1    3100 3500
 	1    0    0    -1  
@@ -32,7 +56,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 3700 4200 4100
 Wire Wire Line
-	2500 4100 2600 4100
+	2500 4100 5250 4100
 Wire Wire Line
 	2600 3600 3100 3600
 Wire Wire Line
@@ -40,7 +64,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 3500 2950 2800
 Wire Wire Line
-	2950 2800 2600 2800
+	2950 2800 2500 2800
 Text HLabel 2500 2800 0    60   Input ~ 0
 V_GATEDRIVE
 Wire Wire Line
@@ -50,57 +74,56 @@ D
 Text HLabel 2500 4100 0    60   Input ~ 0
 GND
 $Comp
-L Transformer:TRANSF5 T5
+L BALUN T?
 U 1 1 5A55D35F
 P 5650 3700
-AR Path="/5A5600E6/5A55D35F" Ref="T5"  Part="1" 
-AR Path="/5A55CBF5/5A55D35F" Ref="T4"  Part="1" 
-F 0 "T4" H 5650 4229 70  0000 C CNN
-F 1 "BALUN" H 5650 4108 70  0000 C CNN
-F 2 "Indigo:BALUN" H 5650 3994 60  0000 C CNN
+F 0 "T?" H 5650 3950 70  0000 C CNN
+F 1 "BALUN" H 5650 3400 70  0000 C CNN
+F 2 "" H 5650 3700 60  0000 C CNN
 F 3 "" H 5650 3700 60  0000 C CNN
 	1    5650 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:C C6
+L C C?
 U 1 1 5A55D3A4
 P 5050 3500
-AR Path="/5A5600E6/5A55D3A4" Ref="C6"  Part="1" 
-AR Path="/5A55CBF5/5A55D3A4" Ref="C4"  Part="1" 
-F 0 "C4" H 5075 3600 50  0000 L CNN
+F 0 "C?" H 5075 3600 50  0000 L CNN
 F 1 "C" H 5075 3400 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5088 3350 50  0001 C CNN
+F 2 "" H 5088 3350 50  0001 C CNN
 F 3 "" H 5050 3500 50  0001 C CNN
 	1    5050 3500
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5200 3500 5250 3500
+NoConn ~ 5250 3700
 $Comp
-L indigo-rescue:R R8
+L R R?
 U 1 1 5A55D46D
 P 6250 3700
-AR Path="/5A5600E6/5A55D46D" Ref="R8"  Part="1" 
-AR Path="/5A55CBF5/5A55D46D" Ref="R6"  Part="1" 
-F 0 "R6" V 6330 3700 50  0000 C CNN
+F 0 "R?" V 6330 3700 50  0000 C CNN
 F 1 "R" V 6250 3700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6180 3700 50  0001 C CNN
+F 2 "" V 6180 3700 50  0001 C CNN
 F 3 "" H 6250 3700 50  0001 C CNN
 	1    6250 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
+	6050 3500 7000 3500
+Wire Wire Line
 	6250 3500 6250 3550
 Wire Wire Line
 	6250 3850 6250 3900
+Wire Wire Line
+	6050 3900 7000 3900
 $Comp
-L indigo-rescue:R-SHORTED R7
+L R-SHORTED R?
 U 1 1 5A55D4F1
 P 4500 3500
-AR Path="/5A5600E6/5A55D4F1" Ref="R7"  Part="1" 
-AR Path="/5A55CBF5/5A55D4F1" Ref="R5"  Part="1" 
-F 0 "R5" V 4580 3500 50  0000 C CNN
+F 0 "R?" V 4580 3500 50  0000 C CNN
 F 1 "R-SHORTED" V 4400 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 4500 3500 60  0000 C CNN
+F 2 "" H 4500 3500 60  0000 C CNN
 F 3 "" H 4500 3500 60  0000 C CNN
 	1    4500 3500
 	0    1    1    0   
@@ -112,7 +135,7 @@ Wire Wire Line
 Connection ~ 6250 3500
 Connection ~ 6250 3900
 Wire Wire Line
-	2600 3350 2600 3600
+	2600 3350 2600 4100
 Connection ~ 2600 4100
 Connection ~ 4200 4100
 Wire Wire Line
@@ -123,14 +146,12 @@ Text HLabel 7000 3900 2    60   Input ~ 0
 DRIVE-
 Connection ~ 2600 2800
 $Comp
-L indigo-rescue:C C5
+L C C?
 U 1 1 5A56765F
 P 2600 3200
-AR Path="/5A5600E6/5A56765F" Ref="C5"  Part="1" 
-AR Path="/5A55CBF5/5A56765F" Ref="C3"  Part="1" 
-F 0 "C3" H 2625 3300 50  0000 L CNN
+F 0 "C?" H 2625 3300 50  0000 L CNN
 F 1 "C" H 2625 3100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2638 3050 50  0001 C CNN
+F 2 "" H 2638 3050 50  0001 C CNN
 F 3 "" H 2600 3200 50  0001 C CNN
 	1    2600 3200
 	1    0    0    -1  
@@ -142,26 +163,4 @@ Text Notes 5350 3350 2    60   ~ 0
 DC blocking
 Text Notes 2450 3250 2    60   ~ 0
 decoupling\n
-Wire Wire Line
-	6250 3500 7000 3500
-Wire Wire Line
-	6250 3900 7000 3900
-Wire Wire Line
-	2600 4100 4200 4100
-Wire Wire Line
-	4200 4100 5250 4100
-Wire Wire Line
-	2600 2800 2500 2800
-Wire Wire Line
-	2600 3600 2600 4100
-Wire Wire Line
-	5200 3500 5450 3500
-Wire Wire Line
-	5250 3900 5450 3900
-NoConn ~ 5450 3700
-NoConn ~ 5850 3700
-Wire Wire Line
-	5850 3500 6250 3500
-Wire Wire Line
-	5850 3900 6250 3900
 $EndSCHEMATC

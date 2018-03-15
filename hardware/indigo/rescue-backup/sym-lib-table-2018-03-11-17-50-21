@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name indigo-rescue)(type Legacy)(uri ${KIPRJMOD}/indigo-rescue.lib)(options "")(descr ""))
+  (lib (name gsg-symbols)(type Legacy)(uri /home/hedge/Documents/pcbs/greatfet-hardware/hardware/gsg-kicad-lib/gsg-symbols.lib)(options "")(descr ""))
+)

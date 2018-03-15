@@ -1,6 +1,32 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:linear
+LIBS:regul
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:gsg-symbols
+LIBS:Connector
 LIBS:indigo-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
@@ -17,7 +43,7 @@ $EndDescr
 Text Label 15300 2550 0    40   ~ 0
 P2_8
 $Comp
-L indigo-rescue:CONN_02X20 J2
+L CONN_02X20 J2
 U 1 1 55EAB4B7
 P 15750 2900
 F 0 "J2" H 15750 3950 50  0000 C CNN
@@ -32,7 +58,7 @@ F 7 "Alternate: https://www.adafruit.com/products/2223" H 15750 2900 60  0001 C 
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:GND #PWR01
+L GND #PWR01
 U 1 1 55EACE84
 P 15300 1950
 F 0 "#PWR01" H 15300 1700 50  0001 C CNN
@@ -43,7 +69,7 @@ F 3 "" H 15300 1950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L indigo-rescue:GND #PWR02
+L GND #PWR02
 U 1 1 55EAECD0
 P 15300 4300
 F 0 "#PWR02" H 15300 4050 50  0001 C CNN
@@ -54,7 +80,7 @@ F 3 "" H 15300 4300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L indigo-rescue:VCC #PWR03
+L VCC #PWR03
 U 1 1 55EAF03E
 P 16200 4300
 F 0 "#PWR03" H 16200 4150 50  0001 C CNN
@@ -67,7 +93,7 @@ $EndComp
 Text Label 16200 1950 2    40   ~ 0
 VBUS
 $Comp
-L indigo-rescue:CONN_02X20 J1
+L CONN_02X20 J1
 U 1 1 55FB1D52
 P 15750 5250
 F 0 "J1" H 15750 6300 50  0000 C CNN
@@ -119,8 +145,8 @@ Text Label 16200 5200 2    40   ~ 0
 P1_10
 Text Label 15300 5200 0    40   ~ 0
 P5_3
-Text Label 16500 5300 2    40   ~ 0
-GATE_DRIVE_SEQ1
+Text Label 16200 5300 2    40   ~ 0
+P1_11
 Text Label 15300 5300 0    40   ~ 0
 P1_12
 Text Label 16200 5400 2    40   ~ 0
@@ -171,8 +197,8 @@ Text Label 15300 3550 0    40   ~ 0
 P2_2
 Text Label 15300 3450 0    40   ~ 0
 P6_7
-Text Label 14900 3350 0    40   ~ 0
-GATE_DRIVE_SEQ2
+Text Label 15300 3350 0    40   ~ 0
+P6_8
 Text Label 16200 2850 2    40   ~ 0
 P2_3
 Text Label 15300 2850 0    40   ~ 0
@@ -262,7 +288,7 @@ P2_12
 Text Label 14950 7550 1    40   ~ 0
 P2_13
 $Comp
-L indigo-rescue:GND #PWR04
+L GND #PWR04
 U 1 1 560E00A9
 P 14250 7550
 F 0 "#PWR04" H 14250 7300 50  0001 C CNN
@@ -273,7 +299,7 @@ F 3 "" H 14250 7550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:VCC #PWR05
+L VCC #PWR05
 U 1 1 560E046D
 P 16150 7400
 F 0 "#PWR05" H 16150 7250 50  0001 C CNN
@@ -286,7 +312,7 @@ $EndComp
 Text Notes 14750 7750 1    40   ~ 0
 BOOT
 $Comp
-L indigo-rescue:CONN_01X20 J7
+L CONN_01X20 J7
 U 1 1 560E713A
 P 15200 7000
 F 0 "J7" H 15200 8050 50  0000 C CNN
@@ -305,7 +331,7 @@ ADC0_2
 Text Label 14550 7550 1    40   ~ 0
 ADC0_5
 $Comp
-L indigo-rescue:CONN_01X01 MH3
+L CONN_01X01 MH3
 U 1 1 5600EED5
 P 13650 850
 F 0 "MH3" H 13600 950 50  0000 C CNN
@@ -317,7 +343,7 @@ F 4 "DNP" H 13650 850 60  0001 C CNN "Note"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L indigo-rescue:GND #PWR06
+L GND #PWR06
 U 1 1 5600F9D3
 P 13650 1150
 F 0 "#PWR06" H 13650 900 50  0001 C CNN
@@ -328,7 +354,7 @@ F 3 "" H 13650 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:CONN_01X01 MH4
+L CONN_01X01 MH4
 U 1 1 560100F3
 P 14150 1000
 F 0 "MH4" H 14100 1100 50  0000 C CNN
@@ -340,7 +366,7 @@ F 4 "DNP" H 14150 1000 60  0001 C CNN "Note"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L indigo-rescue:GND #PWR07
+L GND #PWR07
 U 1 1 560100F9
 P 14150 1300
 F 0 "#PWR07" H 14150 1050 50  0001 C CNN
@@ -351,7 +377,7 @@ F 3 "" H 14150 1300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:CONN_01X01 MH1
+L CONN_01X01 MH1
 U 1 1 56010ADB
 P 12650 850
 F 0 "MH1" H 12600 950 50  0000 C CNN
@@ -363,7 +389,7 @@ F 4 "DNP" H 12650 850 60  0001 C CNN "Note"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L indigo-rescue:GND #PWR08
+L GND #PWR08
 U 1 1 56010AE1
 P 12650 1150
 F 0 "#PWR08" H 12650 900 50  0001 C CNN
@@ -374,7 +400,7 @@ F 3 "" H 12650 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:CONN_01X01 MH2
+L CONN_01X01 MH2
 U 1 1 56010AE9
 P 13150 1000
 F 0 "MH2" H 13100 1100 50  0000 C CNN
@@ -386,7 +412,7 @@ F 4 "DNP" H 13150 1000 60  0001 C CNN "Note"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L indigo-rescue:GND #PWR09
+L GND #PWR09
 U 1 1 56010AEF
 P 13150 1300
 F 0 "#PWR09" H 13150 1050 50  0001 C CNN
@@ -403,7 +429,7 @@ RESET
 Text Label 15050 7550 1    40   ~ 0
 RTC_ALARM
 $Comp
-L indigo-rescue:GND #PWR010
+L GND #PWR010
 U 1 1 56035FE9
 P 16050 7550
 F 0 "#PWR010" H 16050 7300 50  0001 C CNN
@@ -414,7 +440,7 @@ F 3 "" H 16050 7550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:GND #PWR011
+L GND #PWR011
 U 1 1 56036BE7
 P 15150 7550
 F 0 "#PWR011" H 15150 7300 50  0001 C CNN
@@ -425,12 +451,12 @@ F 3 "" H 15150 7550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:CW-HEADER CW1
+L CW-HEADER JP?
 U 1 1 5A546538
 P 2000 1200
-F 0 "CW1" H 2000 1250 60  0000 C CNN
+F 0 "JP?" H 2000 1250 60  0000 C CNN
 F 1 "CW-HEADER" H 2500 1250 60  0001 C CNN
-F 2 "Connectors_IDC:IDC-Header_2x10_Pitch2.54mm_Straight" H 2000 1250 60  0001 C CNN
+F 2 "" H 2000 1250 60  0001 C CNN
 F 3 "" H 2000 1250 60  0001 C CNN
 	1    2000 1200
 	1    0    0    -1  
@@ -440,7 +466,7 @@ NoConn ~ 1800 1300
 Text Label 2800 2000 0    60   ~ 0
 CW_TRIGGER
 $Comp
-L indigo-rescue:GND #PWR012
+L GND #PWR012
 U 1 1 5A546A61
 P 2900 1150
 F 0 "#PWR012" H 2900 900 50  0001 C CNN
@@ -451,7 +477,7 @@ F 3 "" H 2900 1150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L indigo-rescue:GND #PWR013
+L GND #PWR013
 U 1 1 5A546B7A
 P 1600 2100
 F 0 "#PWR013" H 1600 1850 50  0001 C CNN
@@ -462,12 +488,12 @@ F 3 "" H 1600 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L indigo-rescue:Jumper_NC_Dual JP1
+L Jumper_NC_Dual JP?
 U 1 1 5A546CB6
 P 4200 1500
-F 0 "JP1" H 4250 1400 50  0000 L CNN
+F 0 "JP?" H 4250 1400 50  0000 L CNN
 F 1 "Jumper_NC_Dual" H 4200 1600 50  0000 C BNN
-F 2 "Indigo:JUMP3" H 4200 1500 50  0001 C CNN
+F 2 "" H 4200 1500 50  0001 C CNN
 F 3 "" H 4200 1500 50  0001 C CNN
 	1    4200 1500
 	0    1    1    0   
@@ -481,18 +507,18 @@ GF_CLKIN
 Text Label 4300 1950 0    60   ~ 0
 GLITCH_GEN
 $Comp
-L indigo-rescue:Jumper_NC_Dual JP2
+L Jumper_NC_Dual JP?
 U 1 1 5A5472CD
 P 4200 2450
-F 0 "JP2" H 4250 2350 50  0000 L CNN
+F 0 "JP?" H 4250 2350 50  0000 L CNN
 F 1 "Jumper_NC_Dual" H 4200 2550 50  0000 C BNN
-F 2 "Indigo:JUMP3" H 4200 2450 50  0001 C CNN
+F 2 "" H 4200 2450 50  0001 C CNN
 F 3 "" H 4200 2450 50  0001 C CNN
 	1    4200 2450
 	0    1    1    0   
 $EndComp
 $Comp
-L indigo-rescue:VCC #PWR014
+L VCC #PWR014
 U 1 1 5A54772A
 P 4850 2100
 F 0 "#PWR014" H 4850 1950 50  0001 C CNN
@@ -503,7 +529,7 @@ F 3 "" H 4850 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L indigo-rescue:VBUS #PWR015
+L VBUS #PWR015
 U 1 1 5A547766
 P 4850 2850
 F 0 "#PWR015" H 4850 2700 50  0001 C CNN
@@ -536,21 +562,21 @@ GF_GPIO1
 Text Label 1300 1500 0    60   ~ 0
 GF_SSEL
 $Comp
-L indigo-rescue:Conn_Coaxial CO3
+L Conn_Coaxial J?
 U 1 1 5A55BB5C
 P 14450 4800
-F 0 "CO3" H 14460 4920 50  0000 C CNN
+F 0 "J?" H 14460 4920 50  0000 C CNN
 F 1 "Conn_Coaxial" V 14565 4800 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_SMA_Jack_Edge_Mount" H 14450 4800 50  0001 C CNN
+F 2 "" H 14450 4800 50  0001 C CNN
 F 3 "" H 14450 4800 50  0001 C CNN
 	1    14450 4800
 	-1   0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:GND #PWR0101
+L GND #PWR?
 U 1 1 5A55BEEF
 P 14450 5050
-F 0 "#PWR0101" H 14450 4800 50  0001 C CNN
+F 0 "#PWR?" H 14450 4800 50  0001 C CNN
 F 1 "GND" H 14450 4900 50  0000 C CNN
 F 2 "" H 14450 5050 50  0001 C CNN
 F 3 "" H 14450 5050 50  0001 C CNN
@@ -558,12 +584,12 @@ F 3 "" H 14450 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:R R4
+L R R?
 U 1 1 5A55C0F1
 P 14900 4800
-F 0 "R4" V 14980 4800 50  0000 C CNN
+F 0 "R?" V 14980 4800 50  0000 C CNN
 F 1 "50R" V 14900 4800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 14830 4800 50  0001 C CNN
+F 2 "" V 14830 4800 50  0001 C CNN
 F 3 "" H 14900 4800 50  0001 C CNN
 	1    14900 4800
 	0    1    1    0   
@@ -580,10 +606,10 @@ F5 "DRIVE+" I R 5500 4050 60
 F6 "DRIVE-" I R 5500 4350 60 
 $EndSheet
 $Comp
-L indigo-rescue:GND #PWR0102
+L GND #PWR?
 U 1 1 5A55EDAB
 P 3850 4500
-F 0 "#PWR0102" H 3850 4250 50  0001 C CNN
+F 0 "#PWR?" H 3850 4250 50  0001 C CNN
 F 1 "GND" H 3850 4350 50  0000 C CNN
 F 2 "" H 3850 4500 50  0001 C CNN
 F 3 "" H 3850 4500 50  0001 C CNN
@@ -593,23 +619,23 @@ $EndComp
 Text Label 3600 4250 2    60   ~ 0
 GATE_DRIVE_SEQ1
 $Comp
-L indigo-rescue:Conn_01x02 FF1
+L Conn_01x02 J?
 U 1 1 5A55F4BB
 P 6250 4050
-F 0 "FF1" H 6250 4150 50  0000 C CNN
+F 0 "J?" H 6250 4150 50  0000 C CNN
 F 1 "Conn_01x02" H 6250 3850 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_Panelmate-53780-0270_02x1.25mm_Angled" H 6250 4050 50  0001 C CNN
+F 2 "" H 6250 4050 50  0001 C CNN
 F 3 "" H 6250 4050 50  0001 C CNN
 	1    6250 4050
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:Screw_Terminal_01x02 T1
+L Screw_Terminal_01x02 J?
 U 1 1 5A55F749
 P 6250 4550
-F 0 "T1" H 6250 4650 50  0000 C CNN
+F 0 "J?" H 6250 4650 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 6250 4350 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_Pitch3.50mm" H 6250 4550 50  0001 C CNN
+F 2 "" H 6250 4550 50  0001 C CNN
 F 3 "" H 6250 4550 50  0001 C CNN
 	1    6250 4550
 	1    0    0    -1  
@@ -626,10 +652,10 @@ F5 "DRIVE+" I R 5500 5450 60
 F6 "DRIVE-" I R 5500 5750 60 
 $EndSheet
 $Comp
-L indigo-rescue:GND #PWR0103
+L GND #PWR?
 U 1 1 5A5600EC
 P 3850 5900
-F 0 "#PWR0103" H 3850 5650 50  0001 C CNN
+F 0 "#PWR?" H 3850 5650 50  0001 C CNN
 F 1 "GND" H 3850 5750 50  0000 C CNN
 F 2 "" H 3850 5900 50  0001 C CNN
 F 3 "" H 3850 5900 50  0001 C CNN
@@ -639,34 +665,34 @@ $EndComp
 Text Label 3600 5650 2    60   ~ 0
 GATE_DRIVE_SEQ2
 $Comp
-L indigo-rescue:Conn_01x02 FF2
+L Conn_01x02 J?
 U 1 1 5A5600F5
 P 6250 5450
-F 0 "FF2" H 6250 5550 50  0000 C CNN
+F 0 "J?" H 6250 5550 50  0000 C CNN
 F 1 "Conn_01x02" H 6250 5250 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_Panelmate-53780-0270_02x1.25mm_Angled" H 6250 5450 50  0001 C CNN
+F 2 "" H 6250 5450 50  0001 C CNN
 F 3 "" H 6250 5450 50  0001 C CNN
 	1    6250 5450
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:Screw_Terminal_01x02 T2
+L Screw_Terminal_01x02 J?
 U 1 1 5A5600FF
 P 6250 5950
-F 0 "T2" H 6250 6050 50  0000 C CNN
+F 0 "J?" H 6250 6050 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 6250 5750 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_Pitch3.50mm" H 6250 5950 50  0001 C CNN
+F 2 "" H 6250 5950 50  0001 C CNN
 F 3 "" H 6250 5950 50  0001 C CNN
 	1    6250 5950
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:Jumper_NC_Dual JP3
+L Jumper_NC_Dual JP?
 U 1 1 5A5608C8
 P 1950 4650
-F 0 "JP3" H 2000 4550 50  0000 L CNN
+F 0 "JP?" H 2000 4550 50  0000 L CNN
 F 1 "Jumper_NC_Dual" H 1950 4750 50  0000 C BNN
-F 2 "Indigo:JUMP3" H 1950 4650 50  0001 C CNN
+F 2 "" H 1950 4650 50  0001 C CNN
 F 3 "" H 1950 4650 50  0001 C CNN
 	1    1950 4650
 	0    -1   -1   0   
@@ -726,6 +752,8 @@ Wire Wire Line
 Wire Wire Line
 	16200 5400 16000 5400
 Wire Wire Line
+	16000 5300 16200 5300
+Wire Wire Line
 	16200 5200 16000 5200
 Wire Wire Line
 	16000 5100 16400 5100
@@ -767,6 +795,8 @@ Wire Wire Line
 	16200 3350 16000 3350
 Wire Wire Line
 	15500 3450 15300 3450
+Wire Wire Line
+	15300 3350 15500 3350
 Wire Wire Line
 	15500 3250 15300 3250
 Wire Wire Line
@@ -876,7 +906,7 @@ Wire Wire Line
 Wire Wire Line
 	2750 1300 2900 1300
 Wire Wire Line
-	1600 2100 1700 2100
+	1600 2100 1800 2100
 Wire Wire Line
 	1800 2200 1700 2200
 Wire Wire Line
@@ -941,9 +971,9 @@ Wire Wire Line
 Wire Wire Line
 	3600 4250 4100 4250
 Wire Wire Line
-	5500 4050 5650 4050
+	5500 4050 6050 4050
 Wire Wire Line
-	5500 4350 5700 4350
+	5500 4350 5950 4350
 Wire Wire Line
 	5950 4350 5950 4150
 Wire Wire Line
@@ -963,9 +993,9 @@ Wire Wire Line
 Wire Wire Line
 	3600 5650 4100 5650
 Wire Wire Line
-	5500 5450 5650 5450
+	5500 5450 6050 5450
 Wire Wire Line
-	5500 5750 5700 5750
+	5500 5750 5950 5750
 Wire Wire Line
 	5950 5750 5950 5550
 Wire Wire Line
@@ -983,19 +1013,19 @@ Connection ~ 5700 5750
 Wire Wire Line
 	2550 5400 4100 5400
 Wire Wire Line
-	2550 4000 2550 4650
+	2550 4000 2550 5400
 Wire Wire Line
 	2550 4000 4100 4000
 Wire Wire Line
 	2050 4650 2550 4650
 Connection ~ 2550 4650
 $Comp
-L indigo-rescue:Screw_Terminal_01x02 T3
+L Screw_Terminal_01x02 J?
 U 1 1 5A560DBF
 P 1200 4150
-F 0 "T3" H 1200 4250 50  0000 C CNN
+F 0 "J?" H 1200 4250 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 1200 3950 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_Pitch3.50mm" H 1200 4150 50  0001 C CNN
+F 2 "" H 1200 4150 50  0001 C CNN
 F 3 "" H 1200 4150 50  0001 C CNN
 	1    1200 4150
 	-1   0    0    1   
@@ -1005,10 +1035,10 @@ Wire Wire Line
 Wire Wire Line
 	1950 4050 1950 4400
 $Comp
-L indigo-rescue:GND #PWR0104
+L GND #PWR?
 U 1 1 5A56106C
 P 1500 4250
-F 0 "#PWR0104" H 1500 4000 50  0001 C CNN
+F 0 "#PWR?" H 1500 4000 50  0001 C CNN
 F 1 "GND" H 1500 4100 50  0000 C CNN
 F 2 "" H 1500 4250 50  0001 C CNN
 F 3 "" H 1500 4250 50  0001 C CNN
@@ -1026,23 +1056,23 @@ Wire Wire Line
 Text Label 700  5200 0    60   ~ 0
 V_DRIVE_BOOST
 $Comp
-L indigo-rescue:AP3012 PMIC1
+L AP3012 PMIC?
 U 1 1 5A563834
 P 9200 2150
-F 0 "PMIC1" H 9250 1500 60  0000 C CNN
+F 0 "PMIC?" H 9250 1500 60  0000 C CNN
 F 1 "AP3012" H 9850 1500 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 9200 2150 60  0001 C CNN
+F 2 "" H 9200 2150 60  0001 C CNN
 F 3 "" H 9200 2150 60  0001 C CNN
 	1    9200 2150
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:L L1
+L L L?
 U 1 1 5A563B3F
 P 9500 1700
-F 0 "L1" V 9450 1700 50  0000 C CNN
+F 0 "L?" V 9450 1700 50  0000 C CNN
 F 1 "L" V 9575 1700 50  0000 C CNN
-F 2 "Inductors_SMD:L_0603_HandSoldering" H 9500 1700 50  0001 C CNN
+F 2 "" H 9500 1700 50  0001 C CNN
 F 3 "" H 9500 1700 50  0001 C CNN
 	1    9500 1700
 	0    1    1    0   
@@ -1050,16 +1080,16 @@ $EndComp
 Wire Wire Line
 	9750 1950 9750 1700
 Wire Wire Line
-	9650 1700 9750 1700
+	9650 1700 9850 1700
 Wire Wire Line
-	8250 1700 8600 1700
+	8250 1700 9350 1700
 Wire Wire Line
 	9300 1700 9300 1950
 $Comp
-L indigo-rescue:VBUS #PWR0105
+L VBUS #PWR?
 U 1 1 5A563E23
 P 8600 1550
-F 0 "#PWR0105" H 8600 1400 50  0001 C CNN
+F 0 "#PWR?" H 8600 1400 50  0001 C CNN
 F 1 "VBUS" H 8600 1700 50  0000 C CNN
 F 2 "" H 8600 1550 50  0001 C CNN
 F 3 "" H 8600 1550 50  0001 C CNN
@@ -1070,12 +1100,12 @@ Connection ~ 9300 1700
 Wire Wire Line
 	9000 2450 8600 2450
 $Comp
-L indigo-rescue:R R3
+L R R?
 U 1 1 5A5641CD
 P 8600 2750
-F 0 "R3" V 8680 2750 50  0000 C CNN
+F 0 "R?" V 8680 2750 50  0000 C CNN
 F 1 "R" V 8600 2750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 8530 2750 50  0001 C CNN
+F 2 "" V 8530 2750 50  0001 C CNN
 F 3 "" H 8600 2750 50  0001 C CNN
 	1    8600 2750
 	1    0    0    -1  
@@ -1083,10 +1113,10 @@ $EndComp
 Wire Wire Line
 	8600 2450 8600 2600
 $Comp
-L indigo-rescue:GND #PWR0106
+L GND #PWR?
 U 1 1 5A56447B
 P 8600 3050
-F 0 "#PWR0106" H 8600 2800 50  0001 C CNN
+F 0 "#PWR?" H 8600 2800 50  0001 C CNN
 F 1 "GND" H 8600 2900 50  0000 C CNN
 F 2 "" H 8600 3050 50  0001 C CNN
 F 3 "" H 8600 3050 50  0001 C CNN
@@ -1094,52 +1124,52 @@ F 3 "" H 8600 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 3000 8600 3000
+	8250 3000 10600 3000
 Wire Wire Line
 	9550 3000 9550 2950
 Connection ~ 8600 3000
 Wire Wire Line
-	8600 2900 8600 3000
+	8600 2900 8600 3050
 $Comp
-L indigo-rescue:R R1
+L R R?
 U 1 1 5A564DAB
 P 10250 2000
-F 0 "R1" V 10330 2000 50  0000 C CNN
+F 0 "R?" V 10330 2000 50  0000 C CNN
 F 1 "R" V 10250 2000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10180 2000 50  0001 C CNN
+F 2 "" V 10180 2000 50  0001 C CNN
 F 3 "" H 10250 2000 50  0001 C CNN
 	1    10250 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:R R2
+L R R?
 U 1 1 5A564E4D
 P 10250 2700
-F 0 "R2" V 10330 2700 50  0000 C CNN
+F 0 "R?" V 10330 2700 50  0000 C CNN
 F 1 "R" V 10250 2700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10180 2700 50  0001 C CNN
+F 2 "" V 10180 2700 50  0001 C CNN
 F 3 "" H 10250 2700 50  0001 C CNN
 	1    10250 2700
 	1    0    0    -1  
 $EndComp
 $Comp
-L indigo-rescue:D D1
+L D D?
 U 1 1 5A564F3C
 P 10000 1700
-F 0 "D1" H 10000 1800 50  0000 C CNN
+F 0 "D?" H 10000 1800 50  0000 C CNN
 F 1 "D" H 10000 1600 50  0000 C CNN
-F 2 "Diodes_SMD:D_0603" H 10000 1700 50  0001 C CNN
+F 2 "" H 10000 1700 50  0001 C CNN
 F 3 "" H 10000 1700 50  0001 C CNN
 	1    10000 1700
 	-1   0    0    1   
 $EndComp
 Connection ~ 9750 1700
 Wire Wire Line
-	10150 1700 10250 1700
+	10150 1700 11450 1700
 Wire Wire Line
 	10250 1700 10250 1850
 Wire Wire Line
-	10250 2150 10250 2450
+	10250 2150 10250 2550
 Wire Wire Line
 	10250 2450 10050 2450
 Connection ~ 10250 2450
@@ -1148,12 +1178,12 @@ Wire Wire Line
 Connection ~ 9550 3000
 Connection ~ 10250 1700
 $Comp
-L indigo-rescue:C C2
+L C C?
 U 1 1 5A5656B7
 P 10600 2450
-F 0 "C2" H 10625 2550 50  0000 L CNN
+F 0 "C?" H 10625 2550 50  0000 L CNN
 F 1 "C" H 10625 2350 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10638 2300 50  0001 C CNN
+F 2 "" H 10638 2300 50  0001 C CNN
 F 3 "" H 10600 2450 50  0001 C CNN
 	1    10600 2450
 	1    0    0    -1  
@@ -1164,12 +1194,12 @@ Wire Wire Line
 	10600 3000 10600 2600
 Connection ~ 10250 3000
 $Comp
-L indigo-rescue:C C1
+L C C?
 U 1 1 5A565A4C
 P 8250 2400
-F 0 "C1" H 8275 2500 50  0000 L CNN
+F 0 "C?" H 8275 2500 50  0000 L CNN
 F 1 "C" H 8275 2300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8288 2250 50  0001 C CNN
+F 2 "" H 8288 2250 50  0001 C CNN
 F 3 "" H 8250 2400 50  0001 C CNN
 	1    8250 2400
 	1    0    0    -1  
@@ -1214,94 +1244,4 @@ Text Notes 6850 4100 2    49   ~ 0
 <-- for FFC
 Text Notes 6850 5500 2    49   ~ 0
 <-- for FFC
-Wire Wire Line
-	1700 2100 1800 2100
-Wire Wire Line
-	5650 4050 5700 4050
-Wire Wire Line
-	5700 4350 5850 4350
-Wire Wire Line
-	5650 5450 5700 5450
-Wire Wire Line
-	5700 5750 5850 5750
-Wire Wire Line
-	2550 4650 2550 5400
-Wire Wire Line
-	9300 1700 9350 1700
-Wire Wire Line
-	8600 3000 9550 3000
-Wire Wire Line
-	8600 3000 8600 3050
-Wire Wire Line
-	9750 1700 9850 1700
-Wire Wire Line
-	10250 2450 10250 2550
-Wire Wire Line
-	9550 3000 10250 3000
-Wire Wire Line
-	10250 1700 10600 1700
-Wire Wire Line
-	10250 3000 10600 3000
-Wire Wire Line
-	8600 1700 9300 1700
-Wire Wire Line
-	10600 1700 11450 1700
-$Comp
-L indigo-rescue:Conn_Coaxial CO1
-U 1 1 5AAC2962
-P 5950 3700
-F 0 "CO1" H 5960 3820 50  0000 C CNN
-F 1 "Conn_Coaxial" V 6065 3700 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_SMA_Jack_Edge_Mount" H 5950 3700 50  0001 C CNN
-F 3 "" H 5950 3700 50  0001 C CNN
-	1    5950 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L indigo-rescue:Conn_Coaxial CO2
-U 1 1 5AAD14F3
-P 5900 5150
-F 0 "CO2" H 5910 5270 50  0000 C CNN
-F 1 "Conn_Coaxial" V 6015 5150 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_SMA_Jack_Edge_Mount" H 5900 5150 50  0001 C CNN
-F 3 "" H 5900 5150 50  0001 C CNN
-	1    5900 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 3700 5700 3700
-Wire Wire Line
-	5700 3700 5700 4050
-Connection ~ 5700 4050
-Wire Wire Line
-	5700 4050 6050 4050
-Wire Wire Line
-	5950 3900 5950 3950
-Wire Wire Line
-	5950 3950 5850 3950
-Wire Wire Line
-	5850 3950 5850 4350
-Connection ~ 5850 4350
-Wire Wire Line
-	5850 4350 5950 4350
-Wire Wire Line
-	5900 5350 5900 5400
-Wire Wire Line
-	5900 5400 5850 5400
-Wire Wire Line
-	5850 5400 5850 5750
-Connection ~ 5850 5750
-Wire Wire Line
-	5850 5750 5950 5750
-Wire Wire Line
-	5750 5150 5700 5150
-Wire Wire Line
-	5700 5150 5700 5450
-Connection ~ 5700 5450
-Wire Wire Line
-	5700 5450 6050 5450
-Wire Wire Line
-	14900 3350 15500 3350
-Wire Wire Line
-	16000 5300 16500 5300
 $EndSCHEMATC
